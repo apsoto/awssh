@@ -99,7 +99,6 @@ def main():
     """
     args = parse_args()
 
-    print(args)
     if args.profile:
         boto3.setup_default_session(profile_name=args.profile)
         args.region = boto3.DEFAULT_SESSION.region_name
